@@ -1,0 +1,281 @@
+:root {
+  --footer-height: 130px;
+  --help-icon-width: 50px;
+  --help-icon-margin: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  color: #26890d;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+}
+
+.version-info {
+  text-align: center;
+  font-size: 70%;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 150px);
+}
+
+.authenticated-banner button {
+  width: 70px;
+}
+
+.authenticated-banner div.note-announcements {
+  text-align: center;
+  vertical-align: top;
+  vert-align: top;
+}
+
+#okta-login-container {
+  width: 400px;
+}
+
+.help {
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
+  overflow-y: auto;
+  max-width: 800px;
+}
+
+.help img {
+  width: var(--help-icon-width);
+  vertical-align: middle;
+  margin-right: var(--help-icon-margin);
+}
+
+.help p {
+  margin-left: calc(var(--help-icon-width) + var(--help-icon-margin));
+}
+
+.tos {
+  width: 100%;
+  text-align: left;
+  font-weight: normal;
+  font-size: 80%;
+  max-height: 400px;
+  overflow-y: auto;
+  max-width: 800px;
+}
+
+.tos-accept {
+  text-align: center;
+}
+
+.tos-accept button {
+  padding: 15px;
+  font-size: 14px;
+  background-color: #20730b;
+  border-color: #20730b;
+  background-image: none;
+  color: #fff;
+  border: 0px;
+  margin-top: 20px;
+}
+
+.tos h1 {
+  text-align: center;
+}
+
+.tos section {
+  margin-bottom: 10px;
+}
+
+.tos section ul {
+  list-style-type: none;
+}
+
+.tos section ul li {
+  margin: 5px 0 0 -20px;
+}
+
+.white-box {
+  background-color: #fff;
+  padding: 10px 30px 30px 30px;
+  box-shadow: 0 0 10px #ccc;
+  box-sizing: border-box;
+}
+
+.announcements {
+  width: 400px;
+  margin: 30px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 460px;
+  min-height: 460px;
+}
+
+.announcements-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcements-wrapper ul li {
+  margin: 1em 0;
+  padding: 0;
+}
+
+.announcements-wrapper ul li h2 {
+  padding: 0;
+  margin: 0;
+  font-weight: bolder;
+}
+
+.announcements-wrapper ul li p {
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  position: absolute;
+  height: var(--footer-height);
+  width: 100%;
+  bottom: 0px;
+  font-size: 12px;
+  padding: 30px 20px 0px 20px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.footer-links {
+  width: 30%;
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+.footer-links a {
+  margin-right: 2em;
+}
+
+.footer-text {
+  width: 70%;
+  display: inline-block;
+  float: left;
+}
+
+.footer-text p:first-child {
+  margin-top: 0;
+}
+
+#okta-sign-in {
+  margin: 0px 0px 0px 0px;
+}
+
+#okta-sign-in.auth-container input[type="submit"] {
+  font-family: "open sans";
+}
+
+#okta-sign-in.auth-container .button-primary,
+#okta-sign-in.auth-container .button-primary:focus,
+#okta-sign-in.auth-container .button-primary:active,
+#okta-sign-in.auth-container input[type="submit"]:focus {
+  background-color: #26890d;
+  border-color: #26890d;
+  font-weight: 500;
+  font-size: 16px;
+  background-image: none;
+  box-shadow: none;
+}
+
+#okta-sign-in.auth-container input[type="submit"]:focus {
+  box-shadow: 0 0 10px #999;
+}
+
+#okta-sign-in.auth-container .button-primary:hover {
+  background-color: #20730b;
+  border-color: #20730b;
+  background-image: none;
+}
+
+#okta-sign-in .auth-content .help-links li {
+  margin-top: 5px;
+}
+
+#okta-sign-in .o-form-theme {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  html {
+    height: auto;
+  }
+
+  body {
+    height: auto;
+  }
+
+  .wrapper {
+    display: block;
+    height: auto;
+    padding: 30px;
+  }
+
+  .okta {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 30px auto;
+  }
+
+  .announcements {
+    width: 100%;
+    max-width: 400px;
+    margin: 0px auto 30px auto;
+  }
+
+  .footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    bottom: inherit;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .footer-links {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .footer-text {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 589px) {
+  .white-box p {
+    margin-left: 0 !important;
+  }
+}
